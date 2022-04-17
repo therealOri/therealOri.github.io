@@ -1,1 +1,129 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #04AA6D;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="https://github.com/therealOri">Github</a></li>
+  <li><a href="https://cash.app/$therealOri">Buy me a coffee</a></li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Orio's Globe</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/miniature.earth.core.js"></script>
+
+<script>
+
+if ( location.protocol == 'file:' ) {
+	alert( 'This does not work with the file protocol due to browser security restrictions.' );
+}
+
+
+var myearth;
+var sprites = [];
+
+window.addEventListener( 'load', function() {
+
+	myearth = new Earth( 'myearth', {
+	
+		location : { lat: 20, lng : 20 },
+	
+		light: 'none',
+
+		mapImage: '/imgs/download.svg',
+		transparent: true,
+		
+		autoRotate : true,
+		autoRotateSpeed: 1.2,
+		autoRotateDelay: 100,
+		autoRotateStart: 2000,			
+		
+	} );
+	
+	
+	myearth.addEventListener( "ready", function() {
+
+		this.startAutoRotate();
+
+		// connections
+		
+		var line = {
+			color : '#009CFF',
+			opacity: 0.35,
+			hairline: true,
+			offset: -0.5
+		};
+		
+		for ( var i in connections ) {			
+			line.locations = [ { lat: connections[i][0], lng: connections[i][1] }, { lat: connections[i][2], lng: connections[i][3] } ];
+			this.addLine( line );
+		}
+		
+		
+	} );
+	
+	
+} );
+
+</script>
+</head>
+
+
+
+<body>
+	<div align="left" class="header">
+		<h1>~Globe~</h1>
+	</div>
+
+	<div id="myearth">
+		<div id="glow"></div>
+	</div>
+
+	<div align="center">
+		<embed src="https://github-readme-streak-stats.herokuapp.com/?user=therealOri&count_private=false&show_icons=true&theme=radical&hide_border=true&hide_title=true" width="400" height="200">
+		<embed src="https://github-readme-stats.vercel.app/api?username=therealOri&theme=radical&hide_border=true" width="400" height="200">
+		<embed src="https://github-readme-stats.vercel.app/api/top-langs/?username=therealOri&exclude_repo=Aang&layout=compacthide_border=true&theme=radical&hide_border=true" width="200" height="200">
+	</div>
+
+</body>
+</html>
