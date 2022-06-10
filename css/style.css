@@ -9,15 +9,6 @@ body {
 
 
 
-.header{
-    position: absolute;
-    font-family:  Arial, Helvetica, sans-serif;
-    color: cyan;
-    text-align: left;
-    left: 80%;
-    bottom: 70%;
-}
-
 .header h1{
     font-size: 32px;
 }
