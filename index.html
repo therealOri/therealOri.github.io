@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon-16x16.png">
 <link rel="manifest" href="/imgs/site.webmanifest">
 <link rel='icon' type='image/x-icon' href='/imgs/favicon.ico'>
+
+
+<title>Orio's Globe</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/css/style.css">
 <style>
 ul {
   list-style-type: none;
@@ -32,29 +41,11 @@ li a:hover {
 }
 
 </style>
-</head>
-<body>
-
-<ul>
-  <li><a href="https://github.com/therealOri">Github</a></li>
-  <li><a href="https://cash.app/$therealOri">Buy me a coffee</a></li>
-</ul>
-
-</body>
-</html>
 
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Orio's Globe</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" href="/css/style.css">
 <script src="/js/miniature.earth.core.js"></script>
 
 <script>
@@ -70,45 +61,30 @@ var sprites = [];
 window.addEventListener( 'load', function() {
 
 	myearth = new Earth( 'myearth', {
-	
+
 		location : { lat: 20, lng : 20 },
-	
+
 		light: 'none',
 
 		mapImage: '/imgs/download.svg',
 		transparent: true,
-		
+
 		autoRotate : true,
 		autoRotateSpeed: 1.2,
 		autoRotateDelay: 100,
-		autoRotateStart: 2000,			
-		
-	} );
-	
-	
+		autoRotateStart: 2000,
+
+	});
+
+
 	myearth.addEventListener( "ready", function() {
 
 		this.startAutoRotate();
 
-		// connections
-		
-		var line = {
-			color : '#009CFF',
-			opacity: 0.35,
-			hairline: true,
-			offset: -0.5
-		};
-		
-		for ( var i in connections ) {			
-			line.locations = [ { lat: connections[i][0], lng: connections[i][1] }, { lat: connections[i][2], lng: connections[i][3] } ];
-			this.addLine( line );
-		}
-		
-		
-	} );
-	
-	
-} );
+	});
+
+
+});
 
 </script>
 </head>
@@ -116,19 +92,21 @@ window.addEventListener( 'load', function() {
 
 
 <body>
-	<div align="left" class="header">
-		<h1>~Globe~</h1>
-	</div>
 
-	<div id="myearth">
-		<div id="glow"></div>
-	</div>
+    <ul>
+        <li><a href="https://github.com/therealOri", target="_blank" rel="noopener noreferrer">Github</a></li>
+        <li><a href="https://cash.app/$therealOri", target="_blank" rel="noopener noreferrer">Buy me a coffee</a></li>
+    </ul>
 
-	<div align="center">
-		<embed src="https://github-readme-streak-stats.herokuapp.com/?user=therealOri&count_private=false&show_icons=true&theme=radical&hide_border=true&hide_title=true" width="400" height="200">
-		<embed src="https://github-readme-stats.vercel.app/api?username=therealOri&theme=radical&hide_border=true" width="400" height="200">
-		<embed src="https://github-readme-stats.vercel.app/api/top-langs/?username=therealOri&exclude_repo=Aang&layout=compacthide_border=true&theme=radical&hide_border=true" width="200" height="200">
-	</div>
+    <div id="myearth">
+        <div id="glow"></div>
+    </div>
+
+    <div align="center">
+        <embed src="https://github-readme-streak-stats.herokuapp.com/?user=therealOri&count_private=false&show_icons=true&theme=radical&hide_border=true&hide_title=true" width="400" height="200">
+        <embed src="https://github-readme-stats.vercel.app/api?username=therealOri&theme=radical&hide_border=true" width="400" height="200">
+        <embed src="https://github-readme-stats.vercel.app/api/top-langs/?username=therealOri&exclude_repo=Aang&layout=compacthide_border=true&theme=radical&hide_border=true" width="200" height="200">
+    </div>
 
 </body>
 </html>
