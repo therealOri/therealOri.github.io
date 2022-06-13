@@ -1,0 +1,14 @@
+body {
+    font-size: system-ui;
+    background: hsl(200 50% 5%);
+    display: grid;
+    place-items: left;
+}
+
+.content {
+    display: inline-grid;
+    place-items: center;
+    position: relative;
+    padding: 18em 3em;
+    color: #fff;
+}
