@@ -5,3 +5,4 @@ Disallow: /js/
 Disallow: /imgs/
 Disallow: /about/
 Disallow: /projects/
+Disallow: /projects/passgen/

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="../../imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../imgs/favicon-16x16.png">
+<link rel="manifest" href="../../imgs/site.webmanifest">
+<link rel='icon' type='image/x-icon' href='../../imgs/favicon.ico'>
+
+
+
+<title>PassGen</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../../css/gen.css">
+
+<h12 class="nav-head">
+    <ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="https://github.com/therealOri", target="_blank" rel="noopener noreferrer">Github</a></li>
+        <li><a href="https://cash.app/$therealOri", target="_blank" rel="noopener noreferrer">Buy me a coffee</a></li>
+        <li><a href="../../projects/projects.html">Projects</a></li>
+    </ul> 
+</h12>
+
+
+<style>
+    .nav-head ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .nav-head li {
+      float: left;
+    }
+    
+    .nav-head li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .nav-head li a:hover {
+      background-color: #04AA6D;
+    }
+    </style>
+</head>
+<!-- <script src="../../js/gen.js"></script> -->
+
+<body>
+  <div class="generator">
+    <h1 class="gh1" align="center">PassGen</h1>
+
+    <div class="password">
+      <input type="text" id="myInput">
+      <button onclick="copyToClipBoard()">copy</button>
+    </div>
+
+    <div class="range">
+      <input type="range" min="25" max="250" value="25">
+      <span>25</span>
+    </div>
+
+    <div class="options">
+      <div class="option">
+        <label>
+          <input type="checkbox" id="uppercaseCb" checked>
+          <span>A-Z</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="lowercaseCb" checked>
+          <span>a-z</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="digitsCb" checked>
+          <span>0-9</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="symbolsCb" checked>
+          <span>!@#$%^&*</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="unicodeCb">
+          <span>unicode</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="emojisCb">
+          <span>emojis</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="aboxesCb">
+          <span>ascii_boxes</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="adboxCb">
+          <span>ascii_draw_box</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="koreanCb">
+          <span>korean</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="russianCb">
+          <span>russian</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="greekUCb">
+          <span>greekU</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="greekLCb">
+          <span>greekL</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="portuLCb">
+          <span>portuL</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="portuUCb">
+          <span>portuU</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="hindiCb">
+          <span>hindi</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="arabicCb">
+          <span>arabic</span>
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="amharicCb">
+          <span>amharic</span>
+        </label>
+      </div>
+    </div>
+    <button class="generate">generate</button>
+  </div>
+  <script src="../../js/gen.js"></script>
+</body>
